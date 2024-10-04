@@ -58,7 +58,7 @@ function Tiket() {
           <img src="./image/musikal.png" alt="Logo" /> {/* Assuming your logo */}
         </div>
         <ul className="menu">
-          <li><a href="/">Home</a></li>
+          <li><a href="/home">Home</a></li>
           <li><a href="/History">Histori</a></li>
           <li><a href="/tiket">Tiket</a></li>
         </ul>
