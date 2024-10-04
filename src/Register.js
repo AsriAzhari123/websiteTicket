@@ -16,7 +16,7 @@ function Register() {
   return (
     <div className="login-container1">
       <div className="image-section1">
-        <img src="images/konser.jpeg" alt="Event" className="background-image1" />
+        <img src="image/konser.jpeg" alt="Event" className="background-image1" />
       </div>
 
       <div className="login-section1">

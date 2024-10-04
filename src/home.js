@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Home.css'; 
+import './home.css'; 
 
 function Home() {
   return (
@@ -10,7 +10,7 @@ function Home() {
           <img src="./image/musikal.png" alt="Logo" /> {/* Assuming your logo is in the public folder */}
         </div>
         <ul className="menu">
-          <li><a href="/">Home</a></li>
+          <li><a href="/home">Home</a></li>
           <li><a href="/History">Histori</a></li>
           <li><a href="/Tiket">Tiket</a></li>
         </ul>

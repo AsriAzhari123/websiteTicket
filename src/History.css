@@ -62,7 +62,6 @@ body {
   }
   
   .concert-details {
-    flex-grow: 1;
     padding-left: 20px;
   }
   
@@ -73,6 +72,7 @@ body {
   
   .concert-details p {
     margin: 5px 0;
+    text-align: left;
     color: #333;
   }
   

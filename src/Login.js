@@ -1,18 +1,24 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
 import './Login.css';
 
 function Login() {
+  const navigate = useNavigate()
+  const submit = (e) => {
+    e.preventDefault()
+    navigate('/home')
+    console.log("asri");
+  }
   return (
     <div className="login-container">
       <div className="image-section">
-        <img src="images/konser.jpeg" alt="Event" className="background-image" />
+        <img src="image/konser.jpeg" alt="Event" className="background-image" />
       </div>
 
       <div className="login-section">
         <h1>Selamat Datang</h1>
         <p>Silahkan Masukkan Akun Anda</p>
-        <form>
+        <form onSubmit = {submit}>
           <div className="input-group">
             <label htmlFor="username">Username</label>
             <input type="text" id="username" placeholder="Masukan Username" />
