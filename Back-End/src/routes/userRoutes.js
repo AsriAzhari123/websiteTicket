@@ -30,6 +30,28 @@ router.post('/register', async (req, res) => {
     }
 });
 
+router.post('/login', async (req, res) => {
+    try {
+        const { username, password } = req.body;
+
+        const existingUser = await User
+            .findOne({ username })
+            .select('+password');
+
+        if (!existingUser) {
+            return res.status(404).json({ error: 'Pengguna tidak ditemukan' });
+        }
+
+        const passwordCorrect = await bcrypt.compare(password, existingUser.password);
+        if (!passwordCorrect) {
+            return res.status(401).json({ error: 'Password salah' });
+        }
+
+        res.json({ message: 'Login berhasil', user: existingUser });
+    } catch (error) {
+        res.status(500).json({ error: 'Login gagal' });
+    }
+})
 
 router.get('/users', async (req, res) => {
     try {
