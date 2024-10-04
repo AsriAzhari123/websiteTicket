@@ -1,3 +1,4 @@
+run-name: "node_modules"
 name: Super-Linter
 
 on: push
