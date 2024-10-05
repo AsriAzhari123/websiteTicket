@@ -1,23 +1,23 @@
-import React, { useEffect, useState } from 'react';
-import './Tiket.css'; // Assuming styling is in Tiket.css
-import axios from "axios";
+import React, { useEffect, useState } from 'react'
+import './Tiket.css' // Assuming styling is in Tiket.css
+import axios from "axios"
 
 function Tiket() {
-  const [data,setData] =  useState(null);
-  const [load,setLoad] = useState(true);
+  const [data,setData] =  useState(null)
+  const [load,setLoad] = useState(true)
 
   const getData = async() => {
     try{
       let datas = await axios.get("http://localhost:3001/produk/getProduk")
       setData(datas.data)
-      setLoad(false);
+      setLoad(false)
     }catch(err){
       console.log(err)
     }
   }
 
   useEffect( () => {
-    getData();
+    getData()
   },[])
 
   if(load){
@@ -45,7 +45,7 @@ function Tiket() {
         ))}
       </div>
     </div>
-  );
+  )
 }
 
-export default Tiket;
+export default Tiket

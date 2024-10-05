@@ -1,13 +1,13 @@
-import React from 'react';
-import { Link, Navigate, useNavigate } from 'react-router-dom';
-import './Login.css';
+import React from 'react'
+import { Link, Navigate, useNavigate } from 'react-router-dom'
+import './Login.css'
 
 function Login() {
   const navigate = useNavigate()
   const submit = (e) => {
     e.preventDefault()
     navigate('/home')
-    console.log("asri");
+    console.log("asri")
   }
   return (
     <div className="login-container">
@@ -35,7 +35,7 @@ function Login() {
         </p>
       </div>
     </div>
-  );
+  )
 }
 
-export default Login;
+export default Login

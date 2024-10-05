@@ -1,8 +1,8 @@
-import React from 'react';
-import { User, Edit, Key, Inbox, Info, Phone, LogOut, LucideInspectionPanel, TagIcon } from 'lucide-react';
-import { handleEditProfile, handleChangePassword } from './UserProfileFunction';
-import './Profile.css';
-import { Navigate, useNavigate } from 'react-router-dom';
+import React from 'react'
+import { User, Edit, Key, Inbox, Info, Phone, LogOut, LucideInspectionPanel, TagIcon } from 'lucide-react'
+import { handleEditProfile, handleChangePassword } from './UserProfileFunction'
+import './Profile.css'
+import { Navigate, useNavigate } from 'react-router-dom'
 
 const Profile = () => {
   const navigate = useNavigate ()
@@ -11,12 +11,12 @@ const Profile = () => {
   
     e.preventDefault()
     navigate('/profiledetail')
-    console.log("asri");
+    console.log("asri")
   } 
   const handleChangePassword = (e) =>{
     e.preventDefault()
     navigate('/changepassword')
-    console.log("asri");
+    console.log("asri")
   }
   return (
     <div className="app-container">
@@ -67,7 +67,7 @@ const Profile = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Profile;
+export default Profile
