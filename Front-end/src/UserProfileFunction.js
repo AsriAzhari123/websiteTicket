@@ -1,7 +1,9 @@
-export const handleEditProfile = () => {
-    console.log('Edit Profile clicked');
-    // Add your edit profile logic here
-  };
+export const handleEditProfile = (e, navigate) => {
+  
+    e.preventDefault()
+    navigate('/profiledetail')
+    console.log("asri");
+  }
   
   export const handleChangePassword = () => {
     console.log('Change Password clicked');

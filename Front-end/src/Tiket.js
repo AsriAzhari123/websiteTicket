@@ -53,19 +53,7 @@ const concerts = [
 function Tiket() {
   return (
     <div>
-      <nav className="navbar">
-        <div className="logo">
-          <img src="./image/musikal.png" alt="Logo" /> {/* Assuming your logo */}
-        </div>
-        <ul className="menu">
-          <li><a href="/home">Home</a></li>
-          <li><a href="/History">Histori</a></li>
-          <li><a href="/tiket">Tiket</a></li>
-        </ul>
-        <div className="profile">
-          <img src="./image/profile.png" alt="Profile" className="profile-picture" />
-        </div>
-      </nav>
+      
 
       <div className="concert-list">
         {concerts.map((concert) => (
