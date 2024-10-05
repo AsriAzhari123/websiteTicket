@@ -1,22 +1,22 @@
-.login-container1 {
+.login-container {
     display: flex;
     height: 100vh;
     overflow: hidden;
 }
 
-.image-section1 {
+.image-section {
     width: 50%;
     height: 100vh;
     overflow: hidden;
 }
 
-.background-image1 {
+.background-image {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
-.login-section1 {
+.login-section {
     width: 50%;
     height: 100vh;
     padding: 40px;
@@ -45,13 +45,13 @@ p {
     max-width: 400px;
 }
 
-.input-group1 {
+.input-group {
     margin-bottom: 20px;
     width: 100%;
     max-width: 400px; 
 }
 
-.input-group1 input {
+.input-group input {
     width: 100%;
     font-size: 1.2rem;
     padding: 12px 20px; 
@@ -59,8 +59,8 @@ p {
     border-radius: 5px;
 }
 
-.login-button1 {
-    width: 115%;
+.login-button {
+    width: 100%; /* Ubah menjadi 100% untuk menghindari masalah lebar */
     max-width: 350px; 
     padding: 15px 20px; 
     background-color: #f54291;
@@ -74,7 +74,7 @@ p {
     margin: 0 auto;
 }
 
-.signup-text1 {
+.signup-text {
     margin-top: 25px;
     font-size: 1rem;
     text-align: center; 
@@ -82,7 +82,7 @@ p {
     max-width: 400px; 
 }
 
-.signup-text1 a {
+.signup-text a {
     color: #f54291;
     text-decoration: none;
 }

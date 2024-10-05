@@ -38,13 +38,12 @@ h1 {
 
 p {
     font-size: 1.2rem;
-    margin: 5px 0 20px 0; 
+    margin: 5px 0 20px; /* Menghapus 0 dari margin kiri dan kanan untuk keseragaman */
     color: #777;
     text-align: center;
     width: 100%;
     max-width: 400px;
 }
-
 
 .input-group {
     margin-bottom: 20px;
@@ -61,7 +60,7 @@ p {
 }
 
 .login-button {
-    width: 115%;
+    width: 100%; /* Mengubah dari 115% ke 100% untuk konsistensi */
     max-width: 350px; 
     padding: 15px 20px; 
     background-color: #f54291;
