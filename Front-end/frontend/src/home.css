@@ -8,7 +8,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 10px;
-  background-color: #5c32a1;
+  background-color: #5c32a1; /* This is fine */
 }
 
 .menu {
@@ -54,7 +54,7 @@ body {
 }
 
 .btn {
-  background-color: rgba(0, 128, 0, 1); /* Menggunakan rgba untuk warna hijau */
+  background-color: rgba(0, 128, 0, 100%); /* Changed to 100% */
   color: white;
   padding: 10px 20px;
   text-decoration: none;
@@ -64,5 +64,5 @@ body {
 }
 
 .btn:hover {
-  background-color: rgb(11, 255, 11);
+  background-color: rgb(11, 255, 11); /* This is fine */
 }

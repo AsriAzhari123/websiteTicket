@@ -40,7 +40,7 @@
 .profile-card1 {
   background-color: white;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 10%), 0 2px 4px -1px rgba(0, 0, 0, 6%); /* Mengubah alpha-value ke format persen */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Mengubah alpha-value ke format desimal */
   padding: 1.5rem;
   border: 1px solid #e5e7eb;
 }
