@@ -6,12 +6,18 @@ import { Navigate, useNavigate } from 'react-router-dom';
 
 const Profile = () => {
   const navigate = useNavigate ()
+  
   const handleEditProfile = (e) => {
   
     e.preventDefault()
     navigate('/profiledetail')
     console.log("asri");
   } 
+  const handleChangePassword = (e) =>{
+    e.preventDefault()
+    navigate('/changepassword')
+    console.log("asri");
+  }
   return (
     <div className="app-container">
       

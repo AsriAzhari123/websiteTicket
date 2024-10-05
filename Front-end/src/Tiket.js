@@ -31,7 +31,7 @@ const concerts = [
   },
   {
     id: 4,
-    artist: "Linkin Park",
+    artist: "Adele",
     location: "Medan",
     date: "11 Nov 2024",
     time: "19.00 - 22.00",
@@ -40,7 +40,7 @@ const concerts = [
   },
   {
     id: 5,
-    artist: "Adele",
+    artist: "Linkin Park",
     location: "Jawa Tengah",
     date: "1 Nov 2024",
     time: "18.00 - 21.00",

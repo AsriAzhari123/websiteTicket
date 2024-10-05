@@ -9,21 +9,28 @@ import History from'./History';
 import Profile from './Profile'
 import ProfileDetail from './ProfileDetail';
 import './App.css';
+import ChangePass from './ChangePass';
 
 
 function App() {
   return (
     <div>
+      <Router>
+        <Routes>
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Register />} /> 
+        </Routes>
+      </Router>
       <Header/>
     <Router>
       <Routes>
-        <Route path="/" element={<Login />} />
-        <Route path="/register" element={<Register />} />
+    
         <Route path="/profile"element = {<Profile/>}/>
         <Route path="/home" element={<Home />} />
         <Route path="/tiket" element={<Tiket />} />
         <Route path="/profiledetail" element={<ProfileDetail />} />
         <Route path="/history" element={<History />} />
+        <Route path="/changepassword" element={<ChangePass />} />
       </Routes>
     </Router>
     </div>

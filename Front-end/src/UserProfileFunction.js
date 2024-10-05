@@ -5,7 +5,10 @@ export const handleEditProfile = (e, navigate) => {
     console.log("asri");
   }
   
-  export const handleChangePassword = () => {
-    console.log('Change Password clicked');
-    // Add your change password logic here
+  export const handleChangePassword = (e, navigate) => {
+
+    e.preventDefault()
+    navigate('/changepassword')
+    console.log('password change')
+   
   };
