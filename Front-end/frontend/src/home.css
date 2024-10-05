@@ -15,7 +15,7 @@ body {
   list-style: none;
   display: flex;
   margin: 0;
-  padding: 0; /* Menambahkan padding 0 untuk list */
+  padding: 0;
 }
 
 .menu li {
@@ -43,7 +43,7 @@ body {
 .concert-img {
   width: 100%;
   height: 100vh;
-  object-fit: cover; /* Menambahkan object-fit agar gambar responsif */
+  object-fit: cover;
 }
 
 .explore-button {
@@ -54,13 +54,13 @@ body {
 }
 
 .btn {
-  background-color: green;
+  background-color: rgba(0, 128, 0, 1); /* Menggunakan rgba untuk warna hijau */
   color: white;
   padding: 10px 20px;
   text-decoration: none;
   font-size: 16px;
   border-radius: 5px;
-  transition: background-color 0.3s ease; /* Menambahkan efek transisi */
+  transition: background-color 0.3s ease;
 }
 
 .btn:hover {
