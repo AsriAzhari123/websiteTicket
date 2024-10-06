@@ -96,7 +96,7 @@ router.get('/users/:id', async (req, res) => {
     }
 });
 
-// Update user profile (text data)
+// Update user profile
 router.patch('/users/:id/profile', async (req, res) => {
     try {
         const { username, email } = req.body;
@@ -113,7 +113,7 @@ router.patch('/users/:id/profile', async (req, res) => {
 // Update user profile picture
 router.patch('/users/:id/profile-picture', upload.single('Image'), async (req, res) => {
     try {
-        const imageUrl = `/uploads/${req.file.filename}`; // Menyimpan path dari gambar yang diunggah
+        const imageUrl = `/uploads/${req.file.filename}`;
         const user = await User.findByIdAndUpdate(req.params.id, { imageUrl: imageUrl }, { new: true });
         if (!user) {
             return res.status(404).json({ error: 'User not found' });

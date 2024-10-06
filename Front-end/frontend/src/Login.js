@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import axios from 'axios';
 import './Login.css';
 
 function Login() {
@@ -14,29 +15,18 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await fetch('http://localhost:3001/api/login', {
-        method: 'POST',
-        headers: {
-          'Content-Type': 'application/json',
-        },
-        body: JSON.stringify({ username, password }),
-      });
+      const response = await axios.post('http://localhost:3001/api/login', { username, password });
 
-      const data = await response.json();
-
-      if (response.ok) {
-        // Tampilkan toast notification untuk login berhasil
+      if (response.status === 200) {
         toast.success('Anda berhasil login!');
-        // Arahkan ke halaman home setelah 1 detik
+        localStorage.setItem('user', JSON.stringify(response.data.user)); // Simpan data pengguna ke localStorage
+
         setTimeout(() => {
           navigate('/home');
         }, 1000);
-      } else {
-        setError(data.error);
       }
     } catch (error) {
-      console.error('Error:', error);
-      setError('Terjadi kesalahan, coba lagi.');
+      setError(error.response?.data?.error || 'Terjadi kesalahan, coba lagi.');
     }
   };
 
@@ -62,7 +52,6 @@ function Login() {
               onChange={(e) => setUsername(e.target.value)}
             />
           </div>
-          
           <div className="input-group">
             <label htmlFor="password">Password</label>
             <input
