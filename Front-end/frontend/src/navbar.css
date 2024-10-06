@@ -110,3 +110,7 @@
 .menu-item:hover {
   background-color: #f3f4f6;
 }
+
+.profile-picture {
+  cursor: pointer;
+}

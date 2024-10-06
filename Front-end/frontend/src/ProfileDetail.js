@@ -1,8 +1,14 @@
 import React from 'react'
-import { Search, User } from 'lucide-react'
+import { Link, useNavigate } from 'react-router-dom';
 import './ProfileDetail.css'
 
+
 const ProfileDetail = () => {
+    const navigate = useNavigate()
+    const submit = (e) => {
+      e.preventDefault()
+      navigate('/Profile')
+    }
   return (
     <div className="profile-page">
       <main>
@@ -18,7 +24,7 @@ const ProfileDetail = () => {
           <p className="privacy-notice">
             Jaga detail privasi Anda tetap pribadi. Informasi yang Anda tambahkan di sini dapat dilihat oleh siapa pun yang dapat melihat profil Anda.
           </p>
-          <form>
+          <form onSubmit={submit}>
             <div className="form-group">
               <label>Nama</label>
               <input type="text" />

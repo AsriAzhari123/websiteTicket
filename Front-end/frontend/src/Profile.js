@@ -11,12 +11,14 @@ const Profile = () => {
   
     e.preventDefault()
     navigate('/profiledetail')
-    console.log("asri")
   } 
   const handleChangePassword = (e) =>{
     e.preventDefault()
     navigate('/changepassword')
-    console.log("asri")
+  }
+  const handleLogout = (e) =>{
+    e.preventDefault()
+    navigate('/')
   }
   return (
     <div className="app-container">
@@ -35,12 +37,11 @@ const Profile = () => {
           <ul className="menu-list">
             <li className="menu-item">
               <TagIcon className="menu-icon" />
-              <button onClick={""} className="menu-button">My Voucher</button>
+              <button onClick={() => {}} className="menu-button">My Voucher</button>
             </li>
             <li className="menu-item">
               <Edit className="menu-icon" />
               <button onClick={handleEditProfile} className="menu-button">Edit Profile</button>
-              
             </li>
             <li className="menu-item">
               <Key className="menu-icon" />
@@ -48,20 +49,20 @@ const Profile = () => {
             </li>
             <li className="menu-item">
               <Inbox className="menu-icon" />
-              <button onClick={""} className="menu-button">Inbox</button>
+              <button onClick={() => {}} className="menu-button">Inbox</button>
             </li>
             <li className="menu-item">
               <Info className="menu-icon" />
-              <button onClick={""} className="menu-button">Tentang Kami</button>
+              <button onClick={() => {}} className="menu-button">Tentang Kami</button>
             </li>
-            <button onClick={""} className="menu-button">
-            <li className="menu-item" >
-                <Phone className="menu-icon" />Kontak Kami
-            </li>
+            <li className="menu-item">
+            <button onClick={() => {}} className="menu-button">
+              <Phone className="menu-icon" /> Kontak Kami
             </button>
+            </li>
             <li className="menu-item">
               <LogOut className="menu-icon" />
-              <button onClick={""} className="menu-button">Keluar</button>
+              <button onClick={handleLogout} className="menu-button">Keluar</button>
             </li>
           </ul>
         </div>
