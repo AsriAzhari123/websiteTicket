@@ -7,10 +7,6 @@ function Login() {
   const submit = (e) => {
     e.preventDefault()
     navigate('/home')
-<<<<<<< HEAD
-=======
-    console.log("asri")
->>>>>>> 9f5d5ef62f04a565e49fb682dd087353478fb687
   }
   return (
     <div className="login-container">
