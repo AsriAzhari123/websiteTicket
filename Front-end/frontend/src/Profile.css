@@ -1,5 +1,5 @@
 .app-container {
-  background-color: #fff; /* Mengubah #ffffff menjadi #fff */
+  background-color: #ffffff;
   min-height: 100vh;
 }
 
@@ -28,7 +28,7 @@
   width: 2rem;
   height: 2rem;
   background-color: #d1d5db;
-  border-radius: 50%;
+  border-radius: 9999px;
 }
 
 .content-container {
@@ -40,7 +40,7 @@
 .profile-card1 {
   background-color: white;
   border-radius: 0.5rem;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* Mengubah alpha-value ke format desimal */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
   padding: 1.5rem;
   border: 1px solid #e5e7eb;
 }
@@ -54,7 +54,7 @@
 .profile-image {
   width: 5rem;
   height: 5rem;
-  border-radius: 50%;
+  border-radius: 9999px;
   margin-right: 1rem;
 }
 
@@ -89,6 +89,7 @@
 }
 
 .menu-button {
+  
   background: none;
   border: none;
   cursor: pointer;

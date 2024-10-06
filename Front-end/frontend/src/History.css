@@ -9,14 +9,14 @@ body {
   align-items: center;
   padding: 10px;
   background-color: #5c32a1;
-  border-top: 5px solid transparent; /* Ubah menjadi border solid */
+  border-top: 5px;
 }
 
 .menu {
   list-style: none;
   display: flex;
   margin: 0;
-  padding: 0; /* Menambahkan padding 0 untuk list */
+  margin-left: 20px;
 }
 
 .menu li {
@@ -27,6 +27,8 @@ body {
   color: white;
   text-decoration: none;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  
 }
 
 .profile-picture {
@@ -35,6 +37,7 @@ body {
   border-radius: 50%;
   margin-right: 30px;
 }
+
 
 .concert-list {
   display: flex;
@@ -45,7 +48,7 @@ body {
 .concert-card {
   display: flex;
   background-color: white;
-  background-image: url("https://pin.it/2ASS3jf71"); /* URL diapit tanda kutip */
+  background-image:url(https://pin.it/2ASS3jf71);
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
@@ -77,22 +80,24 @@ body {
   margin-top: 10px;
 }
 
-.buy-button,
-.cancel-button { /* Mengelompokkan gaya umum */
+.buy-button {
+  background-color: green;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.cancel-button {
+  background-color: red;
   color: white;
   padding: 10px 15px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-}
-
-.buy-button {
-  background-color: rgba(0, 128, 0, 100%); /* Menggunakan notasi modern */
-  margin-right: 10px;
-}
-
-.cancel-button {
-  background-color: rgba(255, 0, 0, 100%); /* Menggunakan notasi modern */
+  
 }
 
 .buy-button:hover {
