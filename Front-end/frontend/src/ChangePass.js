@@ -1,10 +1,10 @@
-import React from 'react'
-import './ChangePass.css'
+import React from 'react';
+import './ChangePass.css';
 
 const ChangePass = () => {
   return (
     <div className="container">
-     
+
       <main>
         <div className="profile-section">
           <img src="./image/profile.png" alt="Profile" className="profile-image" />
@@ -27,7 +27,7 @@ const ChangePass = () => {
         </div>
       </main>
     </div>
-  )
-}
+  );
+};
 
-export default ChangePass
+export default ChangePass;

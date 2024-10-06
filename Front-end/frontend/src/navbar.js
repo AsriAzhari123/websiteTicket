@@ -1,13 +1,13 @@
-import React, { useState } from 'react'
-import { Search, User } from 'lucide-react'
-import './navbar.css'
+import React, { useState } from 'react';
+import { Search, User } from 'lucide-react';
+import './navbar.css';
 
 const Header = () => {
-  const [showProfileMenu, setShowProfileMenu] = useState(false)
+  const [showProfileMenu, setShowProfileMenu] = useState(false);
 
   const toggleProfileMenu = () => {
-    setShowProfileMenu(!showProfileMenu)
-  }
+    setShowProfileMenu(!showProfileMenu);
+  };
 
   return (
     <div className="header-container">
@@ -32,12 +32,12 @@ const Header = () => {
           <button onClick={toggleProfileMenu} className="profile-button">
             <div className="profile-icon">
                 <img src="./image/profile.png" alt="Profile" className="profile-picture" />
-                
+
             </div>
           </button>
         </div>
       </header>
-      
+
       {showProfileMenu && (
         <div className="profile-menu">
           <a href="/Profile" className="menu-item">My Profile</a>
@@ -46,7 +46,7 @@ const Header = () => {
         </div>
       )}
     </div>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

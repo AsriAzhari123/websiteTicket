@@ -1,6 +1,6 @@
-import React from 'react'
-import { Link, Navigate, useNavigate } from 'react-router-dom'
-import './Login.css'
+import React from 'react';
+import { Link, Navigate, useNavigate } from 'react-router-dom';
+import './Login.css';
 
 function Login() {
   const navigate = useNavigate()
@@ -22,7 +22,7 @@ function Login() {
             <label htmlFor="username">Username</label>
             <input type="text" id="username" placeholder="Masukan Username" />
           </div>
-          
+
           <div className="input-group">
             <label htmlFor="password">Password</label>
             <input type="password" id="password" placeholder="Masukan Password" />
@@ -34,7 +34,7 @@ function Login() {
         </p>
       </div>
     </div>
-  )
+  );
 }
 
-export default Login
+export default Login;

@@ -1,5 +1,5 @@
-import React from 'react'
-import './History.css' // Assuming styling is in Tiket.css
+import React from 'react';
+import './History.css'; // Assuming styling is in Tiket.css
 
 const concerts = [
   {
@@ -48,12 +48,12 @@ const concerts = [
     image: "./image/linkinpark.jpeg",
   },
 
-]
+];
 
 function Tiket() {
   return (
     <div>
-      
+
 
       <div className="concert-list">
         {concerts.map((concert) => (
@@ -65,7 +65,7 @@ function Tiket() {
               <p><strong>{concert.time}</strong></p>
               <p>{concert.price}</p>
               <div className="concert-buttons">
-                
+
                 <button className="cancel-button">Refund</button>
               </div>
             </div>
@@ -73,7 +73,7 @@ function Tiket() {
         ))}
       </div>
     </div>
-  )
+  );
 }
 
-export default Tiket
+export default Tiket;

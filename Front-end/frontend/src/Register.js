@@ -1,17 +1,14 @@
-import React from 'react'
-import { useNavigate } from 'react-router-dom'
-import './Register.css'
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Register.css';
 
 function Register() {
-  const navigate = useNavigate() // Hook to navigate between pages
+  const navigate = useNavigate(); 
 
   const handleSubmit = (event) => {
-    event.preventDefault()
-
-    // Handle your registration logic here
-    // After successful registration, navigate to the login page
-    navigate('/')
-  }
+    event.preventDefault();
+    navigate('/');
+  };
 
   return (
     <div className="login-container1">
@@ -32,7 +29,7 @@ function Register() {
             <label htmlFor="email">Email</label>
             <input type="email" id="email" placeholder="Masukan Email" required />
           </div>
-          
+
           <div className="input-group1">
             <label htmlFor="password">Password</label>
             <input type="password" id="password" placeholder="Masukan Password" required />
@@ -41,7 +38,7 @@ function Register() {
         </form>
       </div>
     </div>
-  )
+  );
 }
 
-export default Register
+export default Register;
