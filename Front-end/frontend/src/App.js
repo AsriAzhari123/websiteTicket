@@ -1,15 +1,15 @@
-import React from 'react';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Header from './navbar';
-import Login from './Login';
-import Register from './Register';
-import Tiket from './Tiket';
-import Home from './home';
-import History from'./History';
+import React from 'react'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
+import Header from './navbar'
+import Login from './Login'
+import Register from './Register'
+import Tiket from './Tiket'
+import Home from './home'
+import History from'./History'
 import Profile from './Profile'
-import ProfileDetail from './ProfileDetail';
-import './App.css';
-import ChangePass from './ChangePass';
+import ProfileDetail from './ProfileDetail'
+import './App.css'
+import ChangePass from './ChangePass'
 
 
 function App() {

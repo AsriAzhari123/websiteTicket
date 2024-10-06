@@ -1,5 +1,5 @@
-import React from 'react';
-import './ChangePass.css';
+import React from 'react'
+import './ChangePass.css'
 
 const ChangePass = () => {
   return (
@@ -27,7 +27,7 @@ const ChangePass = () => {
         </div>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default ChangePass;
+export default ChangePass

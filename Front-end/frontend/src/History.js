@@ -1,5 +1,5 @@
-import React from 'react';
-import './History.css'; // Assuming styling is in Tiket.css
+import React from 'react'
+import './History.css' // Assuming styling is in Tiket.css
 
 const concerts = [
   {
@@ -48,7 +48,7 @@ const concerts = [
     image: "./image/linkinpark.jpeg",
   },
 
-];
+]
 
 function Tiket() {
   return (
@@ -73,7 +73,7 @@ function Tiket() {
         ))}
       </div>
     </div>
-  );
+  )
 }
 
-export default Tiket;
+export default Tiket

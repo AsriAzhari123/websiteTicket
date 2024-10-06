@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
-import { Search, User } from 'lucide-react';
-import './navbar.css';
+import React, { useState } from 'react'
+import { Search, User } from 'lucide-react'
+import './navbar.css'
 
 const Header = () => {
-  const [showProfileMenu, setShowProfileMenu] = useState(false);
+  const [showProfileMenu, setShowProfileMenu] = useState(false)
 
   const toggleProfileMenu = () => {
-    setShowProfileMenu(!showProfileMenu);
-  };
+    setShowProfileMenu(!showProfileMenu)
+  }
 
   return (
     <div className="header-container">
@@ -46,7 +46,7 @@ const Header = () => {
         </div>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default Header;
+export default Header

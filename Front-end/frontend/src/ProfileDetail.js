@@ -1,6 +1,6 @@
-import React from 'react';
-import { Search, User } from 'lucide-react';
-import './ProfileDetail.css';
+import React from 'react'
+import { Search, User } from 'lucide-react'
+import './ProfileDetail.css'
 
 const ProfileDetail = () => {
   return (
@@ -32,7 +32,7 @@ const ProfileDetail = () => {
         </div>
       </main>
     </div>
-  );
-};
+  )
+}
 
-export default ProfileDetail;
+export default ProfileDetail
