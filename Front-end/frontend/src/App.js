@@ -21,7 +21,7 @@ function App() {
 }
 function Main() {
   const location = useLocation();
-  const noNavbarRoutes = ['/', '/register'];
+  const noNavbarRoutes = ['/', '/register','/home'];
   const showNavbar = !noNavbarRoutes.includes(location.pathname);
 
   return (
