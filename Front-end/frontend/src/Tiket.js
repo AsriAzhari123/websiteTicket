@@ -1,23 +1,34 @@
-import React, { useEffect, useState } from 'react';
-import './Tiket.css'; // Assuming styling is in Tiket.css
-import axios from "axios";
+import React, { useEffect, useState } from 'react'
+import './Tiket.css' // Assuming styling is in Tiket.css
+import axios from "axios"
 
 function Tiket() {
-  const [data,setData] =  useState(null);
-  const [load,setLoad] = useState(true);
+  const [data,setData] =  useState(null)
+  const [load,setLoad] = useState(true)
 
   const getData = async() => {
     try{
       let datas = await axios.get("http://localhost:3001/produk/getProduk")
       setData(datas.data)
-      setLoad(false);
+      setLoad(false)
+    }catch(err){
+      console.log(err)
+    }
+  }
+
+  const postData = async(concert) => {
+    try{
+      await axios.post("http://localhost:3001/produk/getHistory",concert)
+      .then(res => {
+       getData();
+      })   
     }catch(err){
       console.log(err)
     }
   }
 
   useEffect( () => {
-    getData();
+    getData()
   },[])
 
   if(load){
@@ -38,14 +49,14 @@ function Tiket() {
               <p><strong>{concert.Time}</strong></p>
               <p>{new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(concert.price)}</p>
               <div className="concert-buttons">
-                <button className="buy-button">Buy Now</button>
+                <button className="buy-button" onClick={() => postData(concert)}>Buy Now</button>
               </div>
             </div>
           </div>
         ))}
       </div>
     </div>
-  );
+  )
 }
 
-export default Tiket;
+export default Tiket

@@ -4,7 +4,7 @@ import './ChangePass.css';
 const ChangePass = () => {
   return (
     <div className="container">
-     
+
       <main>
         <div className="profile-section">
           <img src="./image/profile.png" alt="Profile" className="profile-image" />

@@ -1,14 +1,14 @@
 import React, { useState } from 'react';
 import { Search, User } from 'lucide-react';
+import { Link, useNavigate } from 'react-router-dom';
 import './navbar.css';
 
 const Header = () => {
-  const [showProfileMenu, setShowProfileMenu] = useState(false);
-
-  const toggleProfileMenu = () => {
-    setShowProfileMenu(!showProfileMenu);
-  };
-
+  const navigate = useNavigate()
+    const submit = (e) => {
+      e.preventDefault()
+      navigate('/Profile')
+    }
   return (
     <div className="header-container">
       <header className="header">
@@ -29,22 +29,11 @@ const Header = () => {
             />
             <Search className="search-icon" size={18} />
           </div>
-          <button onClick={toggleProfileMenu} className="profile-button">
             <div className="profile-icon">
-                <img src="./image/profile.png" alt="Profile" className="profile-picture" />
-                
+              <img onClick={submit} src="./image/profile.png" alt="Profile" className="profile-picture" />
             </div>
-          </button>
         </div>
       </header>
-      
-      {showProfileMenu && (
-        <div className="profile-menu">
-          <a href="/Profile" className="menu-item">My Profile</a>
-          <a href="#" className="menu-item">Settings</a>
-          <a href="#" className="menu-item">Logout</a>
-        </div>
-      )}
     </div>
   );
 };

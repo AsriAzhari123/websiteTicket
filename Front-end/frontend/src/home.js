@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import './home.css'; 
+import React from 'react'
+import { Link } from 'react-router-dom'
+import './home.css' 
 
 function Home() {
   return (
@@ -12,7 +12,7 @@ function Home() {
         </div>
       </div>
     </div>
-  );
+  )
 }
 
-export default Home;
+export default Home

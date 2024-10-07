@@ -11,4 +11,4 @@ export const handleEditProfile = (e, navigate) => {
     navigate('/changepassword')
     console.log('password change')
    
-  };
+  }
