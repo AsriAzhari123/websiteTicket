@@ -16,6 +16,17 @@ function Tiket() {
     }
   }
 
+  const postData = async(concert) => {
+    try{
+      await axios.post("http://localhost:3001/produk/getHistory",concert)
+      .then(res => {
+       getData();
+      })   
+    }catch(err){
+      console.log(err)
+    }
+  }
+
   useEffect( () => {
     getData()
   },[])
@@ -38,7 +49,7 @@ function Tiket() {
               <p><strong>{concert.Time}</strong></p>
               <p>{new Intl.NumberFormat('id-ID', { style: 'currency', currency: 'IDR' }).format(concert.price)}</p>
               <div className="concert-buttons">
-                <button className="buy-button">Buy Now</button>
+                <button className="buy-button" onClick={() => postData(concert)}>Buy Now</button>
               </div>
             </div>
           </div>
